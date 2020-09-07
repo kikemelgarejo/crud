@@ -1,9 +1,9 @@
-<%= form_with model: @post local: true do |f|%>
+<%= form_with model: @post, local: true do |f|%>
     <%= f.label :title, "Título del post"%>
     <%= f.text_field :title%>
 
     <%= f.label :content, "Contenido del post"%>
     <%= f.text_area :content%>
 
-    <%= f.submit, "Enviar"%>
+    <%= f.submit "Enviar"%>
 <%end%>
