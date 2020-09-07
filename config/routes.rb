@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get 'posts', to: 'posts#index' #to especifíca como exactamente queremos que se procese la acción
   get 'posts/new'
   post 'posts', to: 'posts#create'
+  get 'posts/:id', to: 'posts#show', as: 'post'
+
 end
